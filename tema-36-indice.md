@@ -1,0 +1,106 @@
+# Tema 36 — Índice
+
+> **Título oficial**: Seguridad y protección en redes de comunicaciones. Seguridad perimetral. Acceso remoto seguro a redes. Redes privadas virtuales (VPN). Seguridad en el puesto del usuario.
+>
+> **Bloque**: Parte II — Técnico (Temas 11-40)
+> **Nivel**: C1 — Técnico Auxiliar TIC, Ayuntamiento de Madrid
+
+---
+
+## Estructura del tema
+
+1. **Fundamentos de seguridad y protección en redes de comunicaciones**
+   1.1. Principios de la seguridad de la información y de las comunicaciones
+   1.2. Amenazas, vulnerabilidades y vectores de ataque en redes informáticas
+   1.3. Mecanismos de protección en la pila de protocolos TCP/IP
+   1.3.1. Seguridad en la capa de red y acceso al medio
+   1.3.2. Seguridad en la capa de transporte y aplicación
+   1.4. Cumplimiento del Esquema Nacional de Seguridad en redes de la Administración Pública
+
+2. **Seguridad perimetral**
+   2.1. Concepto y arquitectura del perímetro de seguridad
+   2.2. Elementos de filtrado e inspección de tráfico
+   2.2.1. Cortafuegos de red, estado e inspección de aplicación
+   2.2.2. Pasarelas de aplicación y servidores proxy de seguridad
+   2.3. Sistemas de prevención y detección de intrusiones
+   2.4. Segmentación de redes y gestión de zonas de seguridad
+   2.4.1. Redes desmilitarizadas y subredes internas
+   2.4.2. Modelo de seguridad de confianza cero
+
+3. **Acceso remoto seguro a redes**
+   3.1. Requisitos y arquitectura de acceso remoto en el ámbito público
+   3.2. Control de acceso, identificación y autenticación
+   3.2.1. Autenticación multifactor y uso de certificados digitales
+   3.2.2. Servidores de autenticación, autorización y auditoría
+   3.3. Protocolos y servicios para la gestión remota segura
+
+4. **Redes privadas virtuales (VPN)**
+   4.1. Conceptos generales y clasificaciones de VPN
+   4.1.1. VPN de sitio a sitio
+   4.1.2. VPN de acceso remoto
+   4.2. Protocolos de tunelización y cifrado en VPN
+   4.2.1. Arquitectura y protocolos IPSec
+   4.2.2. VPN basadas en SSL y TLS
+   4.2.3. Protocolos de tunelización en nivel de enlace
+
+5. **Seguridad en el puesto del usuario**
+   5.1. Protección del sistema operativo y del hardware del puesto
+   5.2. Soluciones de protección del punto final
+   5.2.1. Antivirus, antimalware y plataformas de detección y respuesta
+   5.2.2. Cortafuegos personales y cifrado de almacenamiento
+   5.3. Gestión centralizada de directivas de seguridad y actualizaciones
+   5.4. Concienciación y buenas prácticas para la seguridad del empleado público
+
+---
+
+## Conceptos clave para memorizar
+
+| Concepto | Dato clave |
+|---|---|
+| Las cinco dimensiones de seguridad del ENS | **Confidencialidad (C)**, **Integridad (I)**, **Trazabilidad (T)**, **Autenticidad (A)** y **Disponibilidad (D)**. La regla nemotécnica es **CITAD**. No son tres («la tríada CIA») sino **cinco**: el ENS añade trazabilidad y autenticidad, y de ellas depende el **nivel** de cada medida. Confundir dimensión (C, I, T, A, D) con **categoría** del sistema (BÁSICA, MEDIA, ALTA) es el error conceptual más penalizado |
+| Categoría frente a nivel | El **nivel** (BAJO, MEDIO, ALTO) se fija **por dimensión**. La **categoría** del sistema (BÁSICA, MEDIA, ALTA) se deriva de la **dimensión más exigente**: si alguna es ALTO, el sistema es de categoría ALTA; si ninguna es ALTO pero alguna es MEDIO, es MEDIA; en el resto, BÁSICA |
+| Principios básicos del ENS (arts. 5-11) | Seguridad **integral** · gestión de la seguridad basada en el **riesgo** · **prevención, detección, respuesta y conservación** · existencia de **líneas de defensa** (**art. 9**: capas organizativas, físicas y lógicas) · **vigilancia continua y reevaluación periódica** (art. 10) · **diferenciación de responsabilidades** (art. 11: información, servicio, seguridad y sistema, separada de la explotación) |
+| Defensa en profundidad | Traducción operativa del **art. 9**: varias capas independientes, de modo que el compromiso de una **no** comprometa el sistema entero. Es la razón de que exista a la vez cortafuegos perimetral, segmentación, VPN, MFA y antimalware en el puesto: **ninguna medida sustituye a las demás** |
+| Amenaza, vulnerabilidad, riesgo e impacto | **Amenaza**: evento que puede causar daño (existe con independencia de nosotros). **Vulnerabilidad**: debilidad propia que la amenaza puede aprovechar. **Riesgo** = probabilidad × impacto, y solo se puede reducir actuando sobre la **vulnerabilidad** o sobre el **impacto**, nunca sobre la amenaza. **Salvaguarda** o medida: lo que reduce el riesgo. Metodología de referencia en las AAPP españolas: **MAGERIT v3** y la herramienta **PILAR** |
+| Cifras de amenaza (ENISA, ETL 2025) | **4.875 incidentes** analizados entre el **1-7-2024 y el 30-6-2025**. El **DDoS** es el **77 %** de los incidentes notificados, pero solo el **2 %** provocó una interrupción real. El **ransomware** es la amenaza de **mayor impacto**. El **phishing** es el vector de entrada dominante: **60 %**, seguido de la **explotación de vulnerabilidades** con el **21,3 %**. Más del **80 %** de la ingeniería social observada a principios de 2025 se apoya ya en **IA** |
+| Ataques por capa | **Enlace**: envenenamiento **ARP**, saturación de la tabla **CAM**, **VLAN hopping**, **rogue AP**. **Red**: **suplantación de IP**, escaneo, **DDoS** volumétrico, encaminamiento malicioso. **Transporte**: **SYN flood**, secuestro de sesión TCP, escaneo de puertos. **Aplicación**: **phishing**, inyección **SQL**, **XSS**, envenenamiento de caché **DNS**, DDoS de aplicación |
+| Mecanismo de protección por capa | **Enlace**: **MACsec** (IEEE **802.1AE**), **802.1X** con EAP, port security, **WPA3** en inalámbrica. **Red**: **IPsec** (AH, ESP, IKEv2), filtrado en cortafuegos. **Transporte**: **TLS** y **DTLS**. **Aplicación**: **SSH**, HTTPS, **DNSSEC**, S/MIME. La regla: **cuanto más baja la capa, más tráfico protege y menos contexto entiende** |
+| Las tres medidas de red del ENS | **`mp.com.1` Perímetro seguro** (todas las dimensiones, **aplica en BÁSICA, MEDIA y ALTA**): sistema de protección perimetral que separe la red interna del exterior y por el que **todo el tráfico debe pasar**, con **todos los flujos autorizados previamente**. **`mp.com.2` Protección de la confidencialidad**: exige **VPN cifradas** cuando la comunicación sale del dominio de seguridad propio. **`mp.com.4` Separación de flujos de información en la red**: **no aplica** en BÁSICA; en MEDIA exige `+ [R1 o R2 o R3]` (VLAN, VPN o separación física) |
+| El detalle del ENS que casi nadie sabe | `mp.com.1` remite a una **«Instrucción Técnica de Seguridad de Interconexión de Sistemas de Información»** que fijará los requisitos del perímetro por categoría. **Esa ITS no se ha publicado**: a agosto de 2026 solo hay **cuatro ITS** en el BOE — **Conformidad** e **Informe del Estado de la Seguridad** (2016), **Auditoría** y **Notificación de Incidentes** (2018) |
+| Segmentación mínima del ENS | `mp.com.4.r1.2` obliga a segregar la red, **como mínimo**, en tres subredes: **usuarios**, **servicios** y **administración**. Y `mp.com.4.2`: si hay **comunicaciones inalámbricas**, irán **en un segmento separado** |
+| Perímetro | Frontera entre la red bajo control propio y las que no lo están. **No es un dispositivo**, es una **función**. Regla de oro: **política por defecto de denegación** (*default deny*) — se prohíbe todo y se autoriza lo imprescindible, nunca al revés |
+| Generaciones de cortafuegos | **1.ª filtro de paquetes** (sin estado, capa 3-4, listas de control de acceso) · **2.ª con estado** (*stateful*, tabla de conexiones, entiende el saludo TCP) · **3.ª pasarela de aplicación / proxy** (capa 7, rompe la conexión en dos) · **UTM** (varias funciones en una caja) · **NGFW** (identifica **aplicación y usuario**, no solo puertos, e integra IPS y antimalware). El **WAF** protege **una aplicación web**, no la red |
+| Cortafuegos con estado | Mantiene una **tabla de estados** con las conexiones abiertas. El tráfico de vuelta se acepta **porque pertenece a una conexión establecida**, sin necesidad de una regla explícita. Es lo que distingue una ACL de un cortafuegos real |
+| Proxy directo e inverso | **Directo** (*forward*): se pone delante de los **clientes** internos para salir a internet — control de navegación, caché, filtrado de URL, y es donde se aplican `mp.s.3` y su **lista negra** o **lista blanca**. **Inverso** (*reverse*): se pone delante de los **servidores** publicados — termina el TLS, equilibra la carga, oculta el servidor y suele integrar el **WAF** |
+| IDS frente a IPS | **IDS**: **fuera de línea** (modo *promiscuo*, con puerto espejo o TAP), **detecta y avisa**, no bloquea; si falla no corta el servicio. **IPS**: **en línea**, todo el tráfico lo atraviesa, **detecta y bloquea**; un falso positivo **corta tráfico legítimo** y una avería puede dejar la red sin servicio si no hay *bypass*. **HIDS** es de máquina; **NIDS**, de red |
+| Firmas frente a anomalías | Detección por **firmas** (patrones conocidos): muy precisa, **no ve el ataque nuevo** (día cero). Detección por **anomalías** (desviación de una línea base): puede ver lo desconocido, pero genera **falsos positivos**. Los cuatro resultados posibles: verdadero positivo, **falso positivo** (alerta sin ataque), verdadero negativo y **falso negativo** (ataque no detectado, el peor) |
+| ENS y detección | **`op.mon.1` Detección de intrusión**: **aplica ya en BÁSICA** («se dispondrá de herramientas de detección o prevención de intrusiones»); **MEDIA** añade R1 (**basada en reglas**) y **ALTA** R2 (**procedimientos de respuesta**). **`op.mon.3` Vigilancia**: recolección automática de eventos en BÁSICA; **correlación** (R1) en MEDIA — que es lo que se llama **SIEM** |
+| DMZ | **Zona desmilitarizada**: subred intermedia donde se colocan los servicios **publicados a internet** (web, correo entrante, DNS externo). Regla que la define: desde la DMZ **no se puede iniciar** una conexión hacia la red interna; la interna sí puede ir a la DMZ. Dos arquitecturas: **cortafuegos de tres patas** (una sola caja con tres interfaces: exterior, DMZ e interna) y **doble cortafuegos** (dos equipos en serie, idealmente de fabricantes distintos) |
+| Confianza cero | **NIST SP 800-207** (agosto de 2020). Idea central: **«nunca confíes, verifica siempre»** — desaparece la confianza implícita por estar «dentro» de la red. Componentes lógicos: **Motor de Políticas (PE)** y **Administrador de Políticas (PA)**, que forman el **punto de decisión (PDP)**, y el **Punto de Aplicación (PEP)**, que deja pasar o no. Cada acceso se concede **por sesión** y se reevalúa |
+| Confianza cero ≠ fin del perímetro | La confianza cero **no elimina** el perímetro ni el cortafuegos: **complementa** el modelo perimetral, que sigue siendo obligatorio en España por `mp.com.1`. Lo que sustituye es la idea de **red interna de confianza** |
+| Acceso remoto en el ENS | **`op.acc.4.5`**: «Se establecerá una **política específica de acceso remoto**, requiriéndose **autorización expresa**». Es la medida que hay que citar en cualquier pregunta de teletrabajo. Y **`mp.eq.3.3`**: cuando un portátil se conecta por redes no controladas, el servidor limitará información y servicios **a los mínimos imprescindibles** |
+| Base legal del teletrabajo público | **Art. 47 bis del TREBEP**, introducido por el **Real Decreto-ley 29/2020, de 29 de septiembre**. Teletrabajo **expresamente autorizado**, **voluntario y reversible**, compatible con la modalidad presencial, y con **la Administración obligada a proporcionar los medios tecnológicos** necesarios |
+| Los tres factores de autenticación | **Algo que se sabe** (contraseña, PIN) · **algo que se tiene** (tarjeta criptográfica, token OTP, móvil, certificado en dispositivo) · **algo que se es** (biometría: huella, iris, facial). **MFA** exige **dos factores de categorías distintas**: contraseña + PIN **no** es MFA, porque los dos son «algo que se sabe» |
+| MFA en el ENS | `op.acc.5` (usuarios externos) y `op.acc.6` (usuarios de la organización). En **nivel BAJO** basta `+ [R1 o R2 o R3 o R4]`; en **MEDIO y ALTO** se exige `+ [R2 o R3 o R4] + R5`, es decir, **se cae la contraseña sola (R1)** y entra **OTP (R2)** o **certificado cualificado con segundo factor (R3/R4)**, más el **registro de accesos con éxito y fallidos (R5)** |
+| AAA | **Autenticación** (¿quién eres?) · **Autorización** (¿qué puedes hacer?) · **Contabilidad/auditoría** (*accounting*: ¿qué has hecho?). Protocolos: **RADIUS** (RFC **2865**, **UDP 1812** autenticación y **1813** contabilidad, cifra **solo la contraseña**, combina AuthN y AuthZ), **TACACS+** (RFC **8907**, **TCP 49**, **separa** los tres servicios y cifra **todo el cuerpo** del mensaje, típico de administración de equipos de red) y **Diameter** (RFC **6733**, sucesor de RADIUS, sobre TCP o SCTP con TLS/DTLS) |
+| Novedades AAA verificadas | **TACACS+ sobre TLS 1.3**: **RFC 9887**, de **diciembre de 2025** — resuelve la debilidad histórica del cifrado propio de TACACS+. **RADIUS/1.1**: **RFC 9765**, de **abril de 2025**, elimina el uso de **MD5** apoyándose en **ALPN**; está en estado **Experimental** |
+| 802.1X | Control de acceso **a nivel de puerto** (IEEE **802.1X**). Tres actores: **suplicante** (el equipo), **autenticador** (conmutador o punto de acceso) y **servidor de autenticación** (RADIUS). Transporta **EAP** (RFC **3748**); **EAP-TLS** (RFC **5216**, actualizado por el **RFC 9190** para TLS 1.3) es el método con **certificado en ambos extremos**, el más robusto. Hasta autenticarse, el puerto solo deja pasar EAPOL |
+| Gestión remota segura | **SSH** (RFC **4251-4254**, **TCP 22**) sustituye a **Telnet (23)**, **rlogin** y **FTP**: los tres van **en claro** y no deben usarse jamás. **SFTP** y **SCP** viajan **dentro** de SSH. **RDP** (**TCP/UDP 3389**) **nunca se publica directamente a internet**: se accede por VPN o por pasarela de escritorio remoto. **SNMPv1 y v2c** usan «comunidades» en claro: solo **SNMPv3** ofrece autenticación y cifrado |
+| VPN: definición | Red **lógica y privada** construida **sobre una infraestructura pública o compartida**, mediante **tunelización** (encapsular un paquete dentro de otro) y **criptografía**. Aporta **confidencialidad, integridad y autenticidad del origen**; **no** aporta por sí sola disponibilidad ni anonimato. **Túnel ≠ VPN**: GRE encapsula pero **no cifra** |
+| Los dos tipos de VPN | **Sitio a sitio** (*site-to-site*): une **dos redes** de forma permanente entre pasarelas; el usuario final **no instala nada** ni sabe que existe. **De acceso remoto**: une **un dispositivo** con una red; requiere **cliente** o navegador y **autenticación de usuario**. Variante de sitio a sitio: **extranet**, con un organismo tercero |
+| Túnel completo o dividido | **Túnel completo** (*full tunnel*): **todo** el tráfico del portátil sale por la VPN, incluida la navegación — es lo que exige el control de `mp.s.3` y lo recomendable en la Administración. **Túnel dividido** (*split tunnel*): solo va por la VPN el tráfico corporativo — mejora el rendimiento pero **deja el equipo con un pie en cada red** y rompe la monitorización |
+| IPsec: los tres protocolos | **AH** (RFC **4302**, protocolo IP **51**): integridad y autenticación, **NO cifra**. **ESP** (RFC **4303**, protocolo IP **50**): cifra **y** autentica — es el que se usa. **IKEv2** (RFC **7296**, **STD 79**, **UDP 500**, y **UDP 4500** con travesía de NAT): negocia las claves y las asociaciones de seguridad. Arquitectura general: **RFC 4301** |
+| IPsec: los dos modos | **Modo transporte**: cifra **solo la carga útil**, conserva la cabecera IP original; extremo a extremo entre dos equipos. **Modo túnel**: cifra **el paquete IP completo** y le pone una **cabecera IP nueva**; es el de las **VPN entre pasarelas**. Regla de examen: **VPN de sitio a sitio ⇒ ESP en modo túnel** |
+| IPsec: detalles que se preguntan | La **SA** (asociación de seguridad) es **unidireccional**: una conexión bidireccional necesita **dos**. Se identifica por el trío **SPI + dirección de destino + protocolo**. **AH no sobrevive a NAT** (protege la cabecera IP); por eso con NAT se usa **ESP encapsulado en UDP 4500** (RFC **3948**). **IKEv1 está formalmente declarado obsoleto** por el **RFC 9395** (abril de 2023) |
+| SSL/TLS VPN | Aprovecha **TLS sobre TCP 443**, que **atraviesa cualquier cortafuegos**. Dos modalidades: **sin cliente** (*clientless*, por navegador, típicamente un portal con acceso a aplicaciones web) y **con cliente ligero** (túnel completo de nivel de red). Ventaja: despliegue y compatibilidad. Inconveniente: rendimiento y menor control del puesto |
+| Novedad TLS verificada | El **RFC 8446** (TLS 1.3, 2018) ha sido **obsoletado por el RFC 9846, de julio de 2026**, que reedita la especificación y obsoleta también el RFC 5246 (TLS 1.2). **TLS 1.0 y 1.1 están prohibidos** por el **RFC 8996** y **SSL 3.0** por el **RFC 7568**: en 2026 **solo son admisibles TLS 1.2 (bien configurado) y TLS 1.3** |
+| Protocolos de nivel de enlace | **PPTP** (RFC **2637**): **roto criptográficamente, prohibido**. **L2TP** (RFC **2661**; **L2TPv3**, RFC **3931**): **no cifra por sí solo** — se combina como **L2TP/IPsec**. **GRE** (RFC **2784**): encapsula, **no cifra**; se usa con IPsec para transportar multidifusión y protocolos de encaminamiento. **MPLS**: aísla el tráfico entre clientes de un operador, pero **no lo cifra** |
+| Post-cuántico en VPN | Amenaza **«cosecha ahora, descifra después»**. En IKEv2: **RFC 8784** (mezcla de claves precompartidas) y **RFC 9370** (**múltiples intercambios de claves**). En TLS 1.3: **RFC 9954** (jul-2026, informativo) y **RFC 10024** (**agosto de 2026**, norma propuesta) para el intercambio **híbrido PQ/T**. Hoja de ruta de la UE: **31-12-2026** planes nacionales, **31-12-2030** casos de alto riesgo, **31-12-2035** transición completa |
+| Protección del puesto en el ENS | **`mp.eq.1` Puesto de trabajo despejado** (aplica en BÁSICA) · **`mp.eq.2` Bloqueo del puesto** (dimensión **A**: **no aplica** en BAJO, sí desde MEDIO; ALTO añade el **cierre de sesiones**) · **`mp.eq.3` Protección de dispositivos portátiles** (inventario, procedimiento de pérdida o robo, mínimos imprescindibles, evitar guardar claves de acceso remoto; **R1 = cifrado de disco** cuando la confidencialidad es de nivel MEDIO) · **`mp.eq.4` Otros dispositivos conectados a la red** (impresoras, multimedia, **IoT** y **BYOD**) |
+| Antivirus, EPP, EDR y XDR | **Antivirus** clásico: **firmas**, ficheros. **EPP**: plataforma de protección del punto final — antivirus, cortafuegos personal, control de dispositivos, cifrado, todo gestionado en consola. **EDR**: **detección y respuesta**, registra el comportamiento, permite **investigar y aislar** el equipo; es lo que exige el ENS en `op.exp.6.r4` para **categoría ALTA**. **XDR** amplía la correlación a red, correo y nube; **MDR** es el mismo servicio, operado por un tercero |
+| Código dañino en el ENS | **`op.exp.6`**: software antimalware **en todos los equipos: puestos, servidores y elementos perimetrales**, con bases **permanentemente actualizadas** y **protección en tiempo real**. **BÁSICA**: la medida. **MEDIA**: `+ R1 + R2` (escaneo periódico y revisión al arranque). **ALTA**: `+ R1 + R2 + R3 + R4` — **R3 lista blanca de aplicaciones** y **R4 EDR** |
+| Cifrado del puesto | **Cifrado de disco completo** (BitLocker, LUKS, FileVault), anclado normalmente a un **TPM** (módulo de plataforma segura). Protege frente a **pérdida o robo** del equipo apagado; **no** protege frente a malware con el equipo encendido y la sesión abierta. **Arranque seguro** (*Secure Boot*) y **UEFI** protegen la cadena de arranque |
+| Gestión centralizada | **Línea base de seguridad** (*baseline*) aplicada por **GPO** en dominio o por **MDM/UEM** en móviles, más **despliegue de parches** con ventana de mantenimiento y anillos de despliegue. Base normativa: **art. 20 del ENS** (mínimo privilegio y **guías de configuración de seguridad**), **`op.exp.2`** (retirar cuentas estándar, **mínima funcionalidad**, **seguridad por defecto**) y **`op.exp.4`** (procedimiento para **analizar, priorizar y decidir cuándo** aplicar cada actualización; **R1** exige probarlo antes en preproducción) |
+| Fin de soporte | Un sistema sin soporte **no recibe parches** y ningún antivirus lo compensa. **Windows 10 terminó su soporte el 14 de octubre de 2025**; el programa de pago **ESU** solo alarga las actualizaciones **críticas e importantes** hasta el **12 de octubre de 2027**. Mantener puestos fuera de soporte es un **incumplimiento directo de `op.exp.4`** |
+| Concienciación | **`mp.per.3` Concienciación** y **`mp.per.4` Formación** **aplican en las tres categorías**, incluida la BÁSICA. `mp.per.3` obliga a recordar periódicamente **la normativa de buen uso y las técnicas de ingeniería social**, **cómo identificar** un incidente y **el procedimiento para informar**, sean reales o falsas alarmas. Y `mp.s.3.2` exige **higiene de navegación** |
+| El dato que cierra el tema | **El factor humano es el vector dominante**: el phishing es el **60 %** de los accesos iniciales (ENISA, 2025). Por eso la última capa de defensa no es un dispositivo: es **el empleado público formado**, y la normativa lo trata como una medida más, con el mismo rango que un cortafuegos |
