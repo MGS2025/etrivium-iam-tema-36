@@ -35,10 +35,10 @@ def inline(t):
 
 
 CALLOUTS = {
-    "DATO CLAVE EXAMEN": "dato",
+    "DATO CLAVE": "dato",
     "EJERCICIO RESUELTO": "ejercicio",
-    "EJEMPLO AYTO MADRID": "ayto",
-    "REFERENCIA CRUZADA": "ref",
+    "EJEMPLO DE APLICACIÓN EN EL AYTO": "ayto",
+    "RELACIÓN CON OTROS TEMAS": "ref",
 }
 
 
@@ -296,7 +296,7 @@ def build():
 <tr><td>Casos prácticos Ayto Madrid</td><td>3 casos (rediseño del perímetro y la red de una oficina de distrito; acceso remoto y VPN para 900 empleados en teletrabajo; incidente de ransomware entrado por un portátil municipal)</td></tr>
 <tr><td>Fuentes Tier 1</td><td>63 referencias canónicas (ENS del BOE, seis guías CCN-STIC, RFC del IETF, TREBEP, RGPD, NIS2, eIDAS 2, IEEE y NIST)</td></tr>
 </tbody></table>
-<div class="callout ref"><span class="kicker">Cómo estudiar</span>Este tema une <strong>cinco materias completas</strong> que en la práctica pertenecen a equipos distintos, y por eso es de los más extensos del temario. <strong>No se aprueba memorizándolo entero</strong>: se aprueba fijando cuatro cosas. Primera, la <strong>matriz de medidas del ENS</strong> del <strong>D6</strong> y de §1.4, que es lo que convierte una respuesta técnica en una respuesta de oposición. Segunda, <strong>las parejas que se confunden</strong>: IDS/IPS (<strong>D10</strong>), AH/ESP y transporte/túnel (<strong>D17</strong>), proxy directo/inverso (<strong>D9</strong>), EPP/EDR (<strong>D19</strong>) y túnel completo/dividido. Tercera, los <strong>puertos y números de protocolo</strong>, concentrados en <strong>D5</strong> y <strong>D16</strong>. Y cuarta, <strong>qué medida aplica en qué categoría</strong>, que es donde se juegan las preguntas difíciles: <code>mp.com.1</code> aplica ya en BÁSICA, <code>mp.com.4</code> no aplica en BÁSICA y <code>mp.eq.2</code> no aplica en nivel BAJO. Antes de empezar, lee la <strong>advertencia de frontera</strong> con los Temas 32, 34, 35 y 37 que abre el Contenido, y termina siempre por el bloque final, <strong>«los ocho datos que no se pueden fallar»</strong>.</div>"""
+<div class="callout ref"><span class="kicker">Cómo estudiar</span>Este tema une <strong>cinco materias completas</strong> que en la práctica pertenecen a equipos distintos, y por eso es de los más extensos del temario. <strong>No se aprueba memorizándolo entero</strong>: se aprueba fijando cuatro cosas. Primera, la <strong>matriz de medidas del ENS</strong> del <strong>D6</strong> y de §1.4, que es lo que convierte una respuesta técnica en una respuesta de oposición. Segunda, <strong>las parejas que se confunden</strong>: IDS/IPS (<strong>D10</strong>), AH/ESP y transporte/túnel (<strong>D17</strong>), proxy directo/inverso (<strong>D9</strong>), EPP/EDR (<strong>D19</strong>) y túnel completo/dividido. Tercera, los <strong>puertos y números de protocolo</strong>, concentrados en <strong>D5</strong> y <strong>D16</strong>. Y cuarta, <strong>qué medida aplica en qué categoría</strong>: <code>mp.com.1</code> aplica ya en BÁSICA, <code>mp.com.4</code> no aplica en BÁSICA y <code>mp.eq.2</code> no aplica en nivel BAJO. Antes de empezar, lee la <strong>advertencia de frontera</strong> con los Temas 32, 34, 35 y 37 que abre el Contenido, y termina siempre por el bloque final, <strong>«los ocho datos que no se pueden fallar»</strong>.</div>"""
 
     nav = (
         '<nav class="tabs">'

@@ -123,7 +123,7 @@
   <text x="336" y="222" class="d2">DDoS, corte de enlace,</text><text x="336" y="234" class="d2">saturación del cortafuegos</text>
   <text x="506" y="222" class="d2">Redundancia, mp.s.4,</text><text x="506" y="234" class="d2">mitigación aguas arriba</text>
 
-  <text x="20" y="264" class="k2">DE NIVEL A CATEGORÍA: LA REGLA QUE SE PREGUNTA</text>
+  <text x="20" y="264" class="k2">DE NIVEL A CATEGORÍA: LA REGLA CLAVE</text>
   <rect x="20" y="272" width="206" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="123" y="290" text-anchor="middle" class="b2">El NIVEL se fija POR DIMENSIÓN</text><text x="123" y="304" text-anchor="middle" class="d2">Cada una de las cinco recibe</text><text x="123" y="315" text-anchor="middle" class="d2">su propio BAJO, MEDIO o ALTO</text>
   <rect x="236" y="272" width="206" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="339" y="290" text-anchor="middle" class="b2">La CATEGORÍA se DERIVA</text><text x="339" y="304" text-anchor="middle" class="d2">Alguna ALTO → categoría ALTA.</text><text x="339" y="315" text-anchor="middle" class="d2">Si no, alguna MEDIO → MEDIA. Resto: BÁSICA</text>
   <rect x="452" y="272" width="208" height="46" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="556" y="290" text-anchor="middle" class="b2">EL ERROR MÁS PENALIZADO</text><text x="556" y="304" text-anchor="middle" class="d2">Confundir dimensión (C, I, T, A, D)</text><text x="556" y="315" text-anchor="middle" class="d2">con categoría (BÁSICA, MEDIA, ALTA)</text>
@@ -215,7 +215,7 @@
 ## D5 · Protocolos en claro y su versión segura: tabla de puertos
 
 **Sección**: §1.3.2 — Seguridad en la capa de transporte y aplicación
-**Propósito**: Concentrar en una sola imagen **la tabla de puertos más rentable del tema**. Los puertos se preguntan literalmente, y aquí van emparejados con el protocolo inseguro que sustituyen, que es como se preguntan.
+**Propósito**: Concentrar en una sola imagen **la tabla de puertos más rentable del tema**. Aquí los puertos van emparejados con el protocolo inseguro que sustituyen.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" role="img" aria-label="Tabla de protocolos en claro y su versión segura con los puertos: Telnet 23 sustituido por SSH 22; FTP 21 por SFTP 22 o FTPS 990; HTTP 80 por HTTPS 443; SMTP 25 por envío con TLS en 587 o 465; POP3 110 e IMAP 143 por POP3S 995 e IMAPS 993; LDAP 389 por LDAPS 636; SNMP versión 1 y 2c por SNMP versión 3; DNS 53 por DNS sobre TLS en 853 y DNS sobre HTTPS en 443; syslog 514 por syslog sobre TLS en 6514; y escritorio remoto RDP en 3389 que nunca se publica a internet">
@@ -293,7 +293,7 @@
 ## D7 · Del perímetro-muralla al perímetro distribuido
 
 **Sección**: §2.1 — Concepto y arquitectura del perímetro de seguridad
-**Propósito**: Contar en **tres etapas** por qué el modelo perimetral clásico entró en crisis y qué lo sustituye, dejando claro el matiz que se pregunta: el perímetro **no desaparece**, deja de ser suficiente.
+**Propósito**: Contar en **tres etapas** por qué el modelo perimetral clásico entró en crisis y qué lo sustituye, dejando claro el matiz clave: el perímetro **no desaparece**, deja de ser suficiente.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-label="Evolución del perímetro en tres etapas: primero el perímetro muralla con una sola frontera y un interior de confianza; después la defensa en profundidad con perímetro segmentado y varias fronteras internas conforme al artículo 9 del Esquema Nacional de Seguridad; y por último la confianza cero, donde la frontera se acerca a cada recurso. Se advierte de que el perímetro sigue siendo obligatorio por la medida mp punto com punto uno">
@@ -346,7 +346,7 @@
 ## D8 · Las cinco generaciones de cortafuegos
 
 **Sección**: §2.2.1 — Cortafuegos de red, estado e inspección de aplicación
-**Propósito**: Ordenar las generaciones por **la capa que examina cada una** y fijar la diferencia que más se pregunta —la **tabla de estados**—, además de separar el **WAF**, que no es un cortafuegos de red.
+**Propósito**: Ordenar las generaciones por **la capa que examina cada una** y fijar la diferencia clave —la **tabla de estados**—, además de separar el **WAF**, que no es un cortafuegos de red.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 364" role="img" aria-label="Las cinco generaciones de cortafuegos: filtro de paquetes sin estado en capas tres y cuatro; cortafuegos con estado que mantiene una tabla de conexiones; pasarela de aplicación o proxy en capa siete que rompe la conexión en dos; gestión unificada de amenazas UTM que integra varias funciones; y cortafuegos de nueva generación NGFW que identifica aplicación y usuario. Se añade que el cortafuegos de aplicaciones web WAF protege una aplicación y no la red">
@@ -381,7 +381,7 @@
   <text x="450" y="258" class="d8">Necesita descifrar TLS para ver el</text><text x="450" y="271" class="d8">contenido: mp.s.3.r1.2 lo regula</text>
 
   <rect x="20" y="292" width="316" height="44" rx="5" fill="#eef4fa" stroke="#0055a0"/>
-  <text x="178" y="308" text-anchor="middle" class="b8">LA DIFERENCIA QUE SE PREGUNTA</text>
+  <text x="178" y="308" text-anchor="middle" class="b8">LA DIFERENCIA CLAVE</text>
   <text x="178" y="322" text-anchor="middle" class="d8">Filtro de paquetes frente a cortafuegos con estado:</text>
   <text x="178" y="333" text-anchor="middle" class="d8">la TABLA DE ESTADOS: las reglas se escriben en un solo sentido</text>
 
@@ -496,7 +496,7 @@
 ## D11 · DMZ: tres patas, doble cortafuegos y segmentación interna
 
 **Sección**: §2.4.1 — Redes desmilitarizadas y subredes internas
-**Propósito**: Dibujar las **dos arquitecturas de DMZ** que se preguntan, fijar la regla direccional que la define y enlazar con los cuatro refuerzos de `mp.com.4`, incluida la segmentación mínima obligatoria en tres subredes.
+**Propósito**: Dibujar las **dos arquitecturas de DMZ**, fijar la regla direccional que la define y enlazar con los cuatro refuerzos de `mp.com.4`, incluida la segmentación mínima obligatoria en tres subredes.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" role="img" aria-label="Arquitecturas de zona desmilitarizada: cortafuegos de tres patas con una sola caja de tres interfaces exterior, DMZ e interior; y doble cortafuegos con dos equipos en serie y la DMZ en medio, preferiblemente de fabricantes distintos. Se destaca la regla de que desde la DMZ no se puede iniciar ninguna conexión hacia la red interna, y los cuatro refuerzos de la medida mp punto com punto cuatro: VLAN, VPN, separación física y control de los puntos de interconexión">
@@ -552,7 +552,7 @@
 ## D12 · Confianza cero: los siete principios y los componentes
 
 **Sección**: §2.4.2 — Modelo de seguridad de confianza cero
-**Propósito**: Fijar los **siete principios** de la NIST SP 800-207 tal como se preguntan y la separación **PDP / PEP** —quién decide frente a quién ejecuta—, con la advertencia de qué **no** es la confianza cero.
+**Propósito**: Fijar los **siete principios** de la NIST SP 800-207 y la separación **PDP / PEP** —quién decide frente a quién ejecuta—, con la advertencia de qué **no** es la confianza cero.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" role="img" aria-label="Confianza cero según la publicación NIST SP 800-207: los siete principios, desde considerar recurso a toda fuente de datos hasta recopilar información y usarla para mejorar la política; y los componentes lógicos, con el motor de políticas y el administrador de políticas formando el punto de decisión, y el punto de aplicación de políticas en el camino del tráfico. Se advierte de que la confianza cero no elimina el perímetro ni la VPN, que siguen siendo obligatorios en España">
@@ -690,7 +690,7 @@
 ## D15 · AAA y 802.1X: RADIUS, TACACS+ y el flujo de autenticación
 
 **Sección**: §3.2.2 — Servidores de autenticación, autorización y auditoría
-**Propósito**: Comparar los tres protocolos AAA por las tres diferencias que se preguntan y dibujar el flujo **802.1X** con sus tres actores, incluida la asignación dinámica de VLAN.
+**Propósito**: Comparar los tres protocolos AAA por sus tres diferencias y dibujar el flujo **802.1X** con sus tres actores, incluida la asignación dinámica de VLAN.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" role="img" aria-label="Comparación de los protocolos AAA: RADIUS sobre UDP puertos 1812 y 1813 que cifra solo la contraseña y junta autenticación y autorización; TACACS+ sobre TCP puerto 49 que cifra todo el cuerpo y separa las tres funciones; y Diameter sobre TCP o SCTP con TLS. Se añaden las novedades del RFC 9887 de diciembre de 2025 que lleva TACACS+ sobre TLS 1.3 y del RFC 9765 de abril de 2025 con RADIUS 1.1. Y el flujo de 802.1X con suplicante, autenticador y servidor de autenticación, incluida la asignación dinámica de VLAN">
@@ -719,7 +719,7 @@
   <rect x="568" y="248" width="80" height="42" rx="4" fill="#0055a0"/><text x="608" y="266" text-anchor="middle" class="t15">DIRECTORIO</text><text x="608" y="280" text-anchor="middle" class="s15">Identidades</text>
   <text x="34" y="242" class="d15">Hasta que la autenticación tiene éxito, el puerto está NO AUTORIZADO y solo deja pasar EAPOL: ni siquiera se obtiene dirección IP</text>
 
-  <text x="20" y="324" class="k15">MÉTODOS EAP Y LA FUNCIÓN QUE MÁS SE PREGUNTA</text>
+  <text x="20" y="324" class="k15">MÉTODOS EAP Y LA FUNCIÓN MÁS ÚTIL</text>
   <rect x="20" y="332" width="316" height="22" rx="3" fill="#eef4fa" stroke="#0055a0"/><text x="178" y="347" text-anchor="middle" class="d15">EAP-TLS (RFC 5216, y 9190 para TLS 1.3): certificado en AMBOS extremos</text>
   <rect x="344" y="332" width="316" height="22" rx="3" fill="#eef7f1" stroke="#2d8659"/><text x="502" y="347" text-anchor="middle" class="d15">El RADIUS puede devolver el ID de VLAN: asignación DINÁMICA de VLAN</text>
 
@@ -731,7 +731,7 @@
 ## D16 · Taxonomía de VPN: tipo, nivel y protocolo
 
 **Sección**: §4.1 — Conceptos generales y clasificaciones de VPN
-**Propósito**: Cruzar las **dos clasificaciones** que se preguntan —por topología y por nivel del modelo— y dejar en una sola imagen qué protocolo **cifra** y cuál no, que es el error más repetido de la sección.
+**Propósito**: Cruzar las **dos clasificaciones** —por topología y por nivel del modelo— y dejar en una sola imagen qué protocolo **cifra** y cuál no, que es el error más repetido de la sección.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 364" role="img" aria-label="Taxonomía de redes privadas virtuales: por topología, de sitio a sitio que une dos redes entre pasarelas, y de acceso remoto que une un dispositivo con una red; por nivel del modelo, protocolos de nivel dos como PPTP y L2TP, de nivel tres como IPsec y GRE, y de niveles superiores como las VPN basadas en TLS. Se marca cuáles cifran y cuáles no: L2TP, GRE y MPLS no cifran, PPTP está roto, y ESP y TLS sí cifran">
@@ -778,7 +778,7 @@
 ## D17 · IPsec: AH y ESP, modo transporte y modo túnel
 
 **Sección**: §4.2.1 — Arquitectura y protocolos IPSec
-**Propósito**: El diagrama más denso del tema. Muestra **la estructura del paquete** en los dos modos, la diferencia entre AH y ESP, las dos fases de IKEv2 y el problema de NAT, que son los cuatro puntos que se preguntan.
+**Propósito**: El diagrama más denso del tema. Muestra **la estructura del paquete** en los dos modos, la diferencia entre AH y ESP, las dos fases de IKEv2 y el problema de NAT, que son los cuatro puntos clave.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" role="img" aria-label="Estructura del paquete IPsec en modo transporte y en modo túnel: en modo transporte se conserva la cabecera IP original y se cifra solo la carga útil; en modo túnel se cifra el paquete IP completo y se añade una cabecera IP nueva de las pasarelas. Se comparan AH, que da integridad y autenticación pero no cifra y usa el protocolo IP 51, y ESP, que cifra y autentica con el protocolo IP 50. Se describen las dos fases de IKEv2 y el problema de la traducción de direcciones, resuelto encapsulando ESP en UDP 4500">

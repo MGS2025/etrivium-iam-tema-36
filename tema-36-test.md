@@ -673,7 +673,7 @@ C) Sí, siempre que la contraseña se cambie cada noventa días y se registren l
 
 <details><summary>Respuesta</summary>
 
-**Correcta: B) No: en nivel MEDIO la tabla exige `+ [R2 o R3 o R4] + R5`, de modo que la contraseña sola (R1) deja de estar disponible y es obligatorio registrar accesos con éxito y fallidos** El matiz que se pregunta: **la longitud de la contraseña es irrelevante para la conformidad**; lo que la norma exige es un **segundo factor**. En nivel BAJO sí bastaría `+ [R1 o R2 o R3 o R4]`.
+**Correcta: B) No: en nivel MEDIO la tabla exige `+ [R2 o R3 o R4] + R5`, de modo que la contraseña sola (R1) deja de estar disponible y es obligatorio registrar accesos con éxito y fallidos** El matiz: **la longitud de la contraseña es irrelevante para la conformidad**; lo que la norma exige es un **segundo factor**. En nivel BAJO sí bastaría `+ [R1 o R2 o R3 o R4]`.
 
 *Referencia: §3.2.1 [ENS]*
 </details>
@@ -758,7 +758,7 @@ C) El modo túnel solo se puede usar con AH, y el modo transporte solo con ESP
 
 <details><summary>Respuesta</summary>
 
-**Correcta: B) El modo transporte conserva la cabecera IP original y protege solo la carga; el modo túnel cifra el paquete IP completo y añade una cabecera IP nueva, ocultando el direccionamiento interno** Regla de examen: **VPN de sitio a sitio implica ESP en modo túnel**. En ese modo, un observador en internet solo ve las direcciones de las dos **pasarelas**, no las de los equipos internos.
+**Correcta: B) El modo transporte conserva la cabecera IP original y protege solo la carga; el modo túnel cifra el paquete IP completo y añade una cabecera IP nueva, ocultando el direccionamiento interno** Regla: **VPN de sitio a sitio implica ESP en modo túnel**. En ese modo, un observador en internet solo ve las direcciones de las dos **pasarelas**, no las de los equipos internos.
 
 *Referencia: §4.2.1 [RFC4301]*
 </details>
@@ -843,7 +843,7 @@ C) Ambas versiones están obsoletas y han sido sustituidas por el protocolo IKEv
 
 <details><summary>Respuesta</summary>
 
-**Correcta: B) IKEv1 fue declarado obsoleto por el RFC 9395, de abril de 2023; IKEv2 es la versión vigente y tiene la categoría de Internet Standard (STD 79)** Ventajas de IKEv2 que se preguntan: menos mensajes para establecer el túnel, detección de par muerto integrada, soporte nativo de **EAP** —y por tanto de MFA—, travesía de NAT normalizada y **MOBIKE**, que permite cambiar de red sin que se caiga el túnel.
+**Correcta: B) IKEv1 fue declarado obsoleto por el RFC 9395, de abril de 2023; IKEv2 es la versión vigente y tiene la categoría de Internet Standard (STD 79)** Ventajas de IKEv2: menos mensajes para establecer el túnel, detección de par muerto integrada, soporte nativo de **EAP** —y por tanto de MFA—, travesía de NAT normalizada y **MOBIKE**, que permite cambiar de red sin que se caiga el túnel.
 
 *Referencia: §4.2.1 [RFC7296]*
 </details>

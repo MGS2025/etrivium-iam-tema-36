@@ -19,15 +19,15 @@ El enunciado oficial (BOAM 10.032, tema 36) enumera **cinco materias**. Correspo
 | **Redes privadas virtuales (VPN)** | §4 | ✅ Completo |
 | **Seguridad en el puesto del usuario** | §5 | ✅ Completo |
 
-El **esqueleto de partida** (`Test_Prompting/temas agosto/36.md`) se ha seguido **literalmente**: sus **cinco bloques de primer nivel**, sus **diecisiete subapartados** y sus **quince epígrafes de tercer nivel** se corresponden uno a uno con la numeración `N`, `N.M` y `N.M.K` del contenido. **Es el segundo esqueleto de la serie de agosto que encaja sin ajustes en los tres niveles**, tras el del Tema 35, y a diferencia de lo ocurrido en los Temas 27 y 30 — donde el mapeo sigue pendiente de una decisión de criterio que conviene unificar.
+El **esqueleto de partida** se ha seguido **literalmente**: sus **cinco bloques de primer nivel**, sus **diecisiete subapartados** y sus **quince epígrafes de tercer nivel** se corresponden uno a uno con la numeración `N`, `N.M` y `N.M.K` del contenido. **Es el segundo esqueleto de la serie de agosto que encaja sin ajustes en los tres niveles**, tras el del Tema 35, y a diferencia de lo ocurrido en los Temas 27 y 30 — donde el mapeo sigue pendiente de una decisión de criterio que conviene unificar.
 
 ## 2. Contenido teórico
 
 - **5 secciones · 17 subsecciones · 15 epígrafes de tercer nivel** (numeración de tres niveles, coherente con el resto de la serie técnica).
 - **≈ 24.200 palabras** medidas con `wc -w`. Es **el segundo tema más extenso de toda la serie**, solo por detrás del **T32 (≈ 25.000)** y por delante del **T29 (≈ 21.200)** y el **T30 (≈ 21.400)**. La causa es estructural y la misma que en aquellos: el enunciado une **cinco materias completas** que en la práctica profesional pertenecen a equipos distintos.
-- **4 tipos de callout**: `[DATO CLAVE EXAMEN]`, `[EJERCICIO RESUELTO]`, `[EJEMPLO AYTO MADRID]` y `[REFERENCIA CRUZADA]`.
+- **4 tipos de callout**: `[DATO CLAVE]`, `[EJERCICIO RESUELTO]`, `[EJEMPLO DE APLICACIÓN EN EL AYTO]` y `[RELACIÓN CON OTROS TEMAS]`.
 - **Caso de referencia transversal**: la red corporativa municipal del IAM, con tres piezas que reaparecen en cada sección —el CPD, una oficina de atención a la ciudadanía de distrito y el portátil de un empleado que teletrabaja—. Las cinco secciones se presentan explícitamente como **cinco preguntas sobre el mismo escenario**.
-- **Sin fragmentos de código**, como en T26, T28, T29, T30, T31, T32 y T35. Decisión deliberada: el enunciado no menciona ningún lenguaje y lo memorizable son **códigos de medida del ENS, puertos, números de protocolo IP, números de RFC y tablas de aplicación**, que se concentran en tablas y en los diagramas D5, D6, D16 y D17. Sí se incluye **una tabla de reglas de cortafuegos** en el ejercicio resuelto de §2.2.1, por ser objeto directo de pregunta en los casos prácticos oficiales.
+- **Sin fragmentos de código**, como en T26, T28, T29, T30, T31, T32 y T35. Decisión deliberada: el enunciado no menciona ningún lenguaje y lo memorizable son **códigos de medida del ENS, puertos, números de protocolo IP, números de RFC y tablas de aplicación**, que se concentran en tablas y en los diagramas D5, D6, D16 y D17. Sí se incluye **una tabla de reglas de cortafuegos** en el ejercicio resuelto de §2.2.1, por su relación directa con los casos prácticos oficiales.
 - Cierre con un bloque de **«los ocho datos que no se pueden fallar»**, no numerado, a modo de resumen memorístico.
 
 ## 3. Fuentes
@@ -48,7 +48,7 @@ El **esqueleto de partida** (`Test_Prompting/temas agosto/36.md`) se ha seguido 
 - **60 preguntas** de 3 opciones (A/B/C), formato oficial de la oposición, con penalización de **1/3** en el motor de corrección.
 - **Distribución de la respuesta correcta: 20 A / 20 B / 20 C**, conseguida **a la primera** por haber fijado la secuencia completa de letras **antes** de redactar (lección aprendida en T23) y verificada por script.
 - Reparto por materia: **P1-P16** fundamentos, amenazas, mecanismos por capa y ENS en la red · **P17-P33** seguridad perimetral, incluida la confianza cero · **P34-P41** acceso remoto seguro · **P42-P51** redes privadas virtuales · **P52-P60** seguridad en el puesto del usuario.
-- **Nota de autocrítica para la validación**: el reparto no es equilibrado en número. Las dos primeras materias suman **33** preguntas y las tres últimas **27**, cuando en el enunciado oficial pesan lo mismo. La razón es que §1 absorbe el marco normativo del ENS, que es **transversal a las otras cuatro secciones** y del que se pregunta mucho. **Si María o el IAM prefieren un reparto de 12 por materia, la corrección es mecánica** y no exige rehacer el banco: bastaría convertir cuatro preguntas de §1.4 (marco ENS) en preguntas de §4 y §5, conservando su letra correcta para no romper el 20/20/20.
+- **Nota de autocrítica para la validación**: el reparto no es equilibrado en número. Las dos primeras materias suman **33** preguntas y las tres últimas **27**, cuando en el enunciado oficial pesan lo mismo. La razón es que §1 absorbe el marco normativo del ENS, que es **transversal a las otras cuatro secciones**. **Si María o el IAM prefieren un reparto de 12 por materia, la corrección es mecánica** y no exige rehacer el banco: bastaría convertir cuatro preguntas de §1.4 (marco ENS) en preguntas de §4 y §5, conservando su letra correcta para no romper el 20/20/20.
 - Verificación automática: 60 preguntas, 3 opciones únicas por pregunta, **coincidencia exacta** entre el texto de la opción correcta y el de la solución, y referencia a epígrafe y fuente en las 60.
 
 ## 5. Casos prácticos (3)
@@ -92,7 +92,7 @@ Tres datos que **prácticamente ningún material de oposición recoge todavía**
 2. **RADIUS ha recibido una revisión que elimina MD5**: el **RFC 9765**, de abril de 2025, define **RADIUS/1.1** apoyándose en la negociación **ALPN** de TLS. Su estado es **Experimental**, matiz que conviene explicar porque no todo lo publicado como RFC es norma.
 3. **El intercambio de claves híbrido post-cuántico para TLS 1.3 se normalizó el mes pasado**: el **RFC 10024**, de **agosto de 2026**, con estado Proposed Standard, precedido del RFC 9954 en julio. Junto con los RFC 8784, 9370 y 9867 para IKEv2, permite responder con precisión a la pregunta de cómo se protege una VPN frente a la amenaza de «cosecha ahora, descifra después».
 
-A ellos se añade un **cuarto hallazgo, de fuente normativa**: **la Instrucción Técnica de Seguridad de Interconexión de Sistemas de Información, a la que remite expresamente `mp.com.1`, no ha sido publicada**. Solo hay **cuatro ITS** en el BOE, y tampoco están la de Criptología ni la de Adquisición de productos de seguridad. Es un dato de alto valor para una pregunta de examen y un argumento profesional: en su ausencia, la referencia práctica del perímetro son las **guías CCN-STIC**, en particular la **408**.
+A ellos se añade un **cuarto hallazgo, de fuente normativa**: **la Instrucción Técnica de Seguridad de Interconexión de Sistemas de Información, a la que remite expresamente `mp.com.1`, no ha sido publicada**. Solo hay **cuatro ITS** en el BOE, y tampoco están la de Criptología ni la de Adquisición de productos de seguridad. Es un dato de alto valor y un argumento profesional: en su ausencia, la referencia práctica del perímetro son las **guías CCN-STIC**, en particular la **408**.
 
 ## 9. Puntos que requieren decisión de María, Ana o el IAM
 
@@ -100,7 +100,7 @@ A ellos se añade un **cuarto hallazgo, de fuente normativa**: **la Instrucción
 2. **Frontera con el T32** (ver el punto 7): confirmar que la criptografía no se reexplica aquí.
 3. **WireGuard**: es hoy uno de los protocolos VPN más extendidos en la práctica, pero **no tiene RFC** —su especificación es un artículo académico— y por eso se ha dejado fuera del contenido examinable, dejándolo anotado en el Tier 4 de fuentes. **Decisión pendiente**: si el IAM considera que debe mencionarse por su presencia real en el mercado, la incorporación es de media página en §4.2.2.
 4. **Términos de mercado (SASE, SSE, ZTNA, NGFW)**: se mencionan advirtiendo expresamente de que **no son estándares**. Confirmar que ese tratamiento es el deseado, o si se prefiere ampliarlos por aparecer en pliegos.
-5. **Profundidad de la parte de confianza cero**: se ha desarrollado con los siete principios literales de la NIST SP 800-207 porque son preguntables casi textualmente. Confirmar que ese nivel de detalle es proporcionado para un C1.
+5. **Profundidad de la parte de confianza cero**: se ha desarrollado con los siete principios literales de la NIST SP 800-207. Confirmar que ese nivel de detalle es proporcionado para un C1.
 
 ## 10. Estado
 
