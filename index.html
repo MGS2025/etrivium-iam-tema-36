@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tema 36 v1.2 — ETRIVIUM IAM</title>
+<title>Tema 36 v1.3 — ETRIVIUM IAM</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--azul:#0055a0;--azul-dark:#003d73;--azul-deep:#002a52;--azul-light:#e8f0f8;--azul-05:rgba(0,85,160,.05);--azul-10:rgba(0,85,160,.10);--verde:#2d8659;--verde-bg:#e8f5ee;--rojo:#d13c3c;--rojo-bg:#fbeeed;--amber:#e89822;--amber-bg:#fdf4e4;--g100:#f5f7fa;--g200:#e8ecf0;--g300:#d1d7df;--g600:#4a5568;--g800:#2d3748;--font:'DM Sans',-apple-system,system-ui,sans-serif;--rad:8px;--sh:0 1px 3px rgba(0,0,0,.08);--shl:0 4px 16px rgba(0,0,0,.08)}
@@ -80,12 +80,12 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
 </head>
 <body>
 <div class="wrap">
-<nav class="tabs"><button class="tab-btn active" data-tab="inicio">Inicio <span class='version-badge'>v1.2</span></button><button class="tab-btn" data-tab="contenido">Contenido</button><button class="tab-btn" data-tab="indice">Índice</button><button class="tab-btn" data-tab="diagramas">Diagramas</button><button class="tab-btn" data-tab="test">Test</button><button class="tab-btn" data-tab="casos">Casos</button><button class="tab-btn" data-tab="validacion">Validación</button><button class="tab-btn" data-tab="fuentes">Fuentes</button></nav>
+<nav class="tabs"><button class="tab-btn active" data-tab="inicio">Inicio <span class='version-badge'>v1.3</span></button><button class="tab-btn" data-tab="contenido">Contenido</button><button class="tab-btn" data-tab="indice">Índice</button><button class="tab-btn" data-tab="diagramas">Diagramas</button><button class="tab-btn" data-tab="test">Test</button><button class="tab-btn" data-tab="casos">Casos</button><button class="tab-btn" data-tab="validacion">Validación</button><button class="tab-btn" data-tab="fuentes">Fuentes</button></nav>
 <section id="tab-inicio" class="tab-content active"><div class="hero">
-  <span class="vbadge">v1.2</span>
+  <span class="vbadge">v1.3</span>
   <h1>Tema 36 — Seguridad y protección en redes de comunicaciones</h1>
   <div class="sub">Principios, amenazas y mecanismos por capa · El ENS en la red · Seguridad perimetral: cortafuegos, proxy, IDS/IPS y DMZ · Segmentación y confianza cero · Acceso remoto seguro, MFA y AAA · Redes privadas virtuales: IPsec, SSL/TLS y túneles de nivel 2 · Seguridad en el puesto del usuario</div>
-  <div class="banner"><strong>Parte II — Técnico · C1 Ayuntamiento de Madrid</strong> · Piloto v1.2 · 2026-08-27 · Pendiente de validación</div>
+  <div class="banner"><strong>Parte II — Técnico · C1 Ayuntamiento de Madrid</strong> · Piloto v1.3 · 2026-08-27 · Pendiente de validación</div>
 </div><!-- ficha-estudio:ini --><div class="ficha-estudio"><div class="fe-item"><span class="fe-k">Extensi&oacute;n</span><span class="fe-v">~27.500 palabras &middot; 19 diagramas &middot; 60 preguntas de test</span></div><div class="fe-item"><span class="fe-k">Tiempo estimado de estudio</span><span class="fe-v">23-25 horas <span class="fe-n">(primera vuelta completa, sin contar repasos)</span></span></div></div><!-- ficha-estudio:fin -->
 <h2>Qué incluye este tema</h2>
 <table><thead><tr><th>Entregable</th><th>Cantidad</th></tr></thead><tbody>
@@ -498,9 +498,9 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="550" y="48" width="110" height="52" rx="5" fill="#e89822"/><text x="605" y="68" text-anchor="middle" class="t1">EL ESCENARIO</text><text x="605" y="82" text-anchor="middle" class="s1">CPD + oficina de</text><text x="605" y="94" text-anchor="middle" class="s1">distrito + teletrabajo</text>
 
   <text x="20" y="124" class="k1">LA MEDIDA DEL ENS QUE RESPALDA CADA UNA</text>
-  <rect x="20" y="132" width="204" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="122" y="150" text-anchor="middle" class="b1">§1 y §2 · mp.com.1 · art. 23</text><text x="122" y="164" text-anchor="middle" class="d1">Perímetro seguro: aplica en BÁSICA,</text><text x="122" y="175" text-anchor="middle" class="d1">MEDIA y ALTA. Todo el tráfico pasa por él</text>
-  <rect x="232" y="132" width="204" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="334" y="150" text-anchor="middle" class="b1">§3 · op.acc.4.5 y op.acc.5</text><text x="334" y="164" text-anchor="middle" class="d1">Política específica de acceso remoto</text><text x="334" y="175" text-anchor="middle" class="d1">con autorización expresa. MFA desde MEDIO</text>
-  <rect x="444" y="132" width="216" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="552" y="150" text-anchor="middle" class="b1">§4 · mp.com.2 · §5 · mp.eq y op.exp.6</text><text x="552" y="164" text-anchor="middle" class="d1">VPN cifrada fuera del dominio propio.</text><text x="552" y="175" text-anchor="middle" class="d1">Portátiles, bloqueo, antimalware y EDR</text>
+  <rect x="20" y="132" width="204" height="50" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="122" y="149" text-anchor="middle" class="b1">§1 y §2 · mp.com.1 · art. 23</text><text x="122" y="163" text-anchor="middle" class="d1">Perímetro seguro: aplica en BÁSICA,</text><text x="122" y="175.5" text-anchor="middle" class="d1">MEDIA y ALTA. Todo el tráfico pasa por él</text>
+  <rect x="232" y="132" width="204" height="50" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="334" y="149" text-anchor="middle" class="b1">§3 · op.acc.4.5 y op.acc.5</text><text x="334" y="163" text-anchor="middle" class="d1">Política específica de acceso remoto</text><text x="334" y="175.5" text-anchor="middle" class="d1">con autorización expresa. MFA desde MEDIO</text>
+  <rect x="444" y="132" width="216" height="50" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="552" y="149" text-anchor="middle" class="b1">§4 · mp.com.2 · §5 · mp.eq y op.exp.6</text><text x="552" y="163" text-anchor="middle" class="d1">VPN cifrada fuera del dominio propio.</text><text x="552" y="175.5" text-anchor="middle" class="d1">Portátiles, bloqueo, antimalware y EDR</text>
 
   <text x="20" y="202" class="k1">EL RECORRIDO DE UN ATAQUE, Y DÓNDE LO PARA CADA CAPA</text>
   <rect x="20" y="210" width="640" height="86" rx="5" fill="#fbfbfd" stroke="#ccc"/>
@@ -561,9 +561,9 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="506" y="222" class="d2">Redundancia, mp.s.4,</text><text x="506" y="234" class="d2">mitigación aguas arriba</text>
 
   <text x="20" y="264" class="k2">DE NIVEL A CATEGORÍA: LA REGLA CLAVE</text>
-  <rect x="20" y="272" width="206" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="123" y="290" text-anchor="middle" class="b2">El NIVEL se fija POR DIMENSIÓN</text><text x="123" y="304" text-anchor="middle" class="d2">Cada una de las cinco recibe</text><text x="123" y="315" text-anchor="middle" class="d2">su propio BAJO, MEDIO o ALTO</text>
-  <rect x="236" y="272" width="206" height="46" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="339" y="290" text-anchor="middle" class="b2">La CATEGORÍA se DERIVA</text><text x="339" y="304" text-anchor="middle" class="d2">Alguna ALTO → categoría ALTA.</text><text x="339" y="315" text-anchor="middle" class="d2">Si no, alguna MEDIO → MEDIA. Resto: BÁSICA</text>
-  <rect x="452" y="272" width="208" height="46" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="556" y="290" text-anchor="middle" class="b2">EL ERROR MÁS PENALIZADO</text><text x="556" y="304" text-anchor="middle" class="d2">Confundir dimensión (C, I, T, A, D)</text><text x="556" y="315" text-anchor="middle" class="d2">con categoría (BÁSICA, MEDIA, ALTA)</text>
+  <rect x="20" y="272" width="206" height="50" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="123" y="290" text-anchor="middle" class="b2">El NIVEL se fija POR DIMENSIÓN</text><text x="123" y="305" text-anchor="middle" class="d2">Cada una de las cinco recibe</text><text x="123" y="317.5" text-anchor="middle" class="d2">su propio BAJO, MEDIO o ALTO</text>
+  <rect x="236" y="272" width="206" height="50" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="339" y="290" text-anchor="middle" class="b2">La CATEGORÍA se DERIVA</text><text x="339" y="305" text-anchor="middle" class="d2">Alguna ALTO → categoría ALTA.</text><text x="339" y="317.5" text-anchor="middle" class="d2">Si no, alguna MEDIO → MEDIA. Resto: BÁSICA</text>
+  <rect x="452" y="272" width="208" height="50" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="556" y="290" text-anchor="middle" class="b2">EL ERROR MÁS PENALIZADO</text><text x="556" y="305" text-anchor="middle" class="d2">Confundir dimensión (C, I, T, A, D)</text><text x="556" y="317.5" text-anchor="middle" class="d2">con categoría (BÁSICA, MEDIA, ALTA)</text>
 
   <text x="20" y="340" class="n2">[Fuente: ENS, RD 311/2022, arts. 5 a 11 y anexos I y II — verificado contra el PDF del BOE]</text>
 </svg>
@@ -637,7 +637,7 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
 <hr>
 <h2>D5 · Protocolos en claro y su versión segura: tabla de puertos</h2>
 <p><strong>Sección</strong>: §1.3.2 — Seguridad en la capa de transporte y aplicación <strong>Propósito</strong>: Concentrar en una sola imagen <strong>la tabla de puertos más rentable del tema</strong>. Aquí los puertos van emparejados con el protocolo inseguro que sustituyen.</p>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" role="img" aria-label="Tabla de protocolos en claro y su versión segura con los puertos: Telnet 23 sustituido por SSH 22; FTP 21 por SFTP 22 o FTPS 990; HTTP 80 por HTTPS 443; SMTP 25 por envío con TLS en 587 o 465; POP3 110 e IMAP 143 por POP3S 995 e IMAPS 993; LDAP 389 por LDAPS 636; SNMP versión 1 y 2c por SNMP versión 3; DNS 53 por DNS sobre TLS en 853 y DNS sobre HTTPS en 443; syslog 514 por syslog sobre TLS en 6514; y escritorio remoto RDP en 3389 que nunca se publica a internet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" role="img" aria-label="Tabla de protocolos en claro y su versión segura con los puertos: Telnet 23 sustituido por SSH 22; FTP 21 por SFTP 22 o FTPS 990; HTTP 80 por HTTPS 443; SMTP 25 por envío con TLS en 587 o 465; POP3 110 e IMAP 143 por POP3S 995 e IMAPS 993; LDAP 389 por LDAPS 636; SNMP versión 1 y 2c por SNMP versión 3; DNS 53 por DNS sobre TLS en 853 y DNS sobre HTTPS en 443; syslog 514 por syslog sobre TLS en 6514; y escritorio remoto RDP en 3389 que nunca se publica a internet">
   <style>.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d5{font:8.5px system-ui,sans-serif;fill:#333}.b5{font:700 9px system-ui,sans-serif;fill:#0055a0}.n5{font:8px system-ui,sans-serif;fill:#666}.hd5{font:700 8.5px system-ui,sans-serif;fill:#fff}.pr5{font:700 9px system-ui,sans-serif;fill:#d13c3c}.pg5{font:700 9px system-ui,sans-serif;fill:#2d8659}.s5{font:8.5px system-ui,sans-serif;fill:#fff}</style>
   <text x="340" y="20" text-anchor="middle" class="h5">Todo protocolo clásico de internet nació en claro y tiene hoy su versión protegida</text>
 
@@ -667,10 +667,10 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="20" y="314" width="640" height="24" fill="#f7f9fc"/>
   <text x="30" y="330" class="d5">Registro centralizado</text><text x="180" y="330" class="pr5">Syslog sin cifrar</text><text x="316" y="330" class="d5">UDP 514</text><text x="392" y="330" class="pg5">Syslog sobre TLS (RFC 5425)</text><text x="566" y="330" class="d5">TCP 6514</text>
 
-  <rect x="20" y="342" width="640" height="16" rx="3" fill="#d13c3c"/>
-  <text x="340" y="354" text-anchor="middle" class="s5">Y el que se usa mal: RDP, escritorio remoto, TCP y UDP 3389 — NUNCA se publica a internet; se accede por VPN o pasarela</text>
+  <rect x="20" y="342" width="640" height="20" rx="3" fill="#d13c3c"/>
+  <text x="340" y="355.5" text-anchor="middle" class="s5">Y el que se usa mal: RDP, escritorio remoto, TCP y UDP 3389 — NUNCA se publica a internet; se accede por VPN o pasarela</text>
 
-  <text x="20" y="368" class="n5">[Fuente: RFC 8314 (correo con TLS) · RFC 9846 (TLS 1.3) · RFC 4251-4254 (SSH) · RFC 5425 (syslog sobre TLS) · RFC 7858 y 8484 (DoT y DoH)]</text>
+  <text x="20" y="375" class="n5">[Fuente: RFC 8314 (correo con TLS) · RFC 9846 (TLS 1.3) · RFC 4251-4254 (SSH) · RFC 5425 (syslog sobre TLS) · RFC 7858 y 8484 (DoT y DoH)]</text>
 </svg>
 <hr>
 <h2>D6 · El ENS en la red: qué medida aplica en qué categoría</h2>
@@ -736,10 +736,10 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="556" y="80" text-anchor="middle" class="b7">Una frontera POR RECURSO</text>
 
   <text x="20" y="180" class="k7">QUÉ ROMPIÓ EL MODELO CLÁSICO</text>
-  <rect x="20" y="188" width="156" height="44" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="98" y="204" text-anchor="middle" class="r7">TELETRABAJO</text><text x="98" y="218" text-anchor="middle" class="d7">El usuario ya no está</text><text x="98" y="229" text-anchor="middle" class="d7">dentro del edificio</text>
-  <rect x="184" y="188" width="156" height="44" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="262" y="204" text-anchor="middle" class="r7">NUBE</text><text x="262" y="218" text-anchor="middle" class="d7">El servicio ya no está</text><text x="262" y="229" text-anchor="middle" class="d7">dentro del CPD</text>
-  <rect x="348" y="188" width="156" height="44" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="426" y="204" text-anchor="middle" class="r7">MOVILIDAD Y BYOD</text><text x="426" y="218" text-anchor="middle" class="d7">Dentro hay equipos que</text><text x="426" y="229" text-anchor="middle" class="d7">no son de la organización</text>
-  <rect x="512" y="188" width="148" height="44" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="586" y="204" text-anchor="middle" class="r7">MOVIMIENTO LATERAL</text><text x="586" y="218" text-anchor="middle" class="d7">Un puesto comprometido</text><text x="586" y="229" text-anchor="middle" class="d7">recorre la red plana</text>
+  <rect x="20" y="188" width="156" height="48" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="98" y="204" text-anchor="middle" class="r7">TELETRABAJO</text><text x="98" y="218" text-anchor="middle" class="d7">El usuario ya no está</text><text x="98" y="231" text-anchor="middle" class="d7">dentro del edificio</text>
+  <rect x="184" y="188" width="156" height="48" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="262" y="204" text-anchor="middle" class="r7">NUBE</text><text x="262" y="218" text-anchor="middle" class="d7">El servicio ya no está</text><text x="262" y="231" text-anchor="middle" class="d7">dentro del CPD</text>
+  <rect x="348" y="188" width="156" height="48" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="426" y="204" text-anchor="middle" class="r7">MOVILIDAD Y BYOD</text><text x="426" y="218" text-anchor="middle" class="d7">Dentro hay equipos que</text><text x="426" y="231" text-anchor="middle" class="d7">no son de la organización</text>
+  <rect x="512" y="188" width="148" height="48" rx="5" fill="#fdeeee" stroke="#d13c3c"/><text x="586" y="204" text-anchor="middle" class="r7">MOVIMIENTO LATERAL</text><text x="586" y="218" text-anchor="middle" class="d7">Un puesto comprometido</text><text x="586" y="231" text-anchor="middle" class="d7">recorre la red plana</text>
 
   <text x="20" y="254" class="k7">LAS DOS REGLAS QUE DEFINEN UN PERÍMETRO, Y QUE SIGUEN VIGENTES</text>
   <rect x="20" y="262" width="316" height="42" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="178" y="280" text-anchor="middle" class="b7">1 · Todo el tráfico atraviesa el sistema</text><text x="178" y="295" text-anchor="middle" class="d7">mp.com.1.1 — si existe una salida alternativa, el perímetro no existe</text>
@@ -781,15 +781,15 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="232" y="258" class="d8">La APLICACIÓN y el USUARIO, no solo el puerto</text><text x="232" y="271" class="d8">y la IP. Integra IPS, antimalware y descifrado TLS</text>
   <text x="450" y="258" class="d8">Necesita descifrar TLS para ver el</text><text x="450" y="271" class="d8">contenido: mp.s.3.r1.2 lo regula</text>
 
-  <rect x="20" y="292" width="316" height="44" rx="5" fill="#eef4fa" stroke="#0055a0"/>
+  <rect x="20" y="292" width="316" height="48" rx="5" fill="#eef4fa" stroke="#0055a0"/>
   <text x="178" y="308" text-anchor="middle" class="b8">LA DIFERENCIA CLAVE</text>
   <text x="178" y="322" text-anchor="middle" class="d8">Filtro de paquetes frente a cortafuegos con estado:</text>
-  <text x="178" y="333" text-anchor="middle" class="d8">la TABLA DE ESTADOS: las reglas se escriben en un solo sentido</text>
+  <text x="178" y="335" text-anchor="middle" class="d8">la TABLA DE ESTADOS: las reglas se escriben en un solo sentido</text>
 
-  <rect x="344" y="292" width="316" height="44" rx="5" fill="#fdeeee" stroke="#d13c3c"/>
+  <rect x="344" y="292" width="316" height="48" rx="5" fill="#fdeeee" stroke="#d13c3c"/>
   <text x="502" y="308" text-anchor="middle" class="r8">EL WAF NO ES UN CORTAFUEGOS DE RED</text>
   <text x="502" y="322" text-anchor="middle" class="d8">Protege UNA aplicación web frente a inyección SQL, XSS</text>
-  <text x="502" y="333" text-anchor="middle" class="d8">y recorrido de directorios. mp.s.2 ya exige + [R1 o R2] en BÁSICA</text>
+  <text x="502" y="335" text-anchor="middle" class="d8">y recorrido de directorios. mp.s.2 ya exige + [R1 o R2] en BÁSICA</text>
 
   <text x="20" y="356" class="n8">[Fuente: CCN-STIC-408 (Seguridad perimetral — cortafuegos) · CCN-STIC-140 (taxonomía) · ENS, mp.com.1 y mp.s.2]</text>
 </svg>
@@ -866,13 +866,13 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="20" y="248" width="640" height="20" fill="#fff"/><text x="30" y="262" class="d10">Latencia que introduce</text><text x="240" y="262" class="d10">Ninguna</text><text x="450" y="262" class="d10">Sí: analiza antes de reenviar</text>
 
   <text x="20" y="288" class="k10">LOS CUATRO RESULTADOS POSIBLES</text>
-  <rect x="20" y="296" width="316" height="48" rx="5" fill="#fff" stroke="#ccc"/>
-  <rect x="118" y="296" width="120" height="18" fill="#0055a0"/><text x="178" y="309" text-anchor="middle" class="s10">HAY ATAQUE</text>
-  <rect x="244" y="296" width="92" height="18" fill="#0055a0"/><text x="290" y="309" text-anchor="middle" class="s10">NO HAY ATAQUE</text>
-  <text x="28" y="328" class="d10">Alerta</text><text x="124" y="328" class="d10">Verdadero positivo</text><text x="250" y="328" class="d10">FALSO POSITIVO</text>
-  <text x="28" y="340" class="d10">Calla</text><text x="124" y="340" class="d10">FALSO NEGATIVO (peor)</text><text x="250" y="340" class="d10">Verdadero negativo</text>
+  <rect x="20" y="296" width="316" height="50" rx="5" fill="#fff" stroke="#ccc"/>
+  <rect x="80" y="297" width="126" height="18" fill="#0055a0"/><text x="143" y="310" text-anchor="middle" class="s10">HAY ATAQUE</text>
+  <rect x="212" y="297" width="118" height="18" fill="#0055a0"/><text x="271" y="310" text-anchor="middle" class="s10">NO HAY ATAQUE</text>
+  <text x="28" y="329" class="d10">Alerta</text><text x="86" y="329" class="d10">Verdadero positivo</text><text x="218" y="329" class="d10">FALSO POSITIVO</text>
+  <text x="28" y="341" class="d10">Calla</text><text x="86" y="341" class="d10">FALSO NEGATIVO (peor)</text><text x="218" y="341" class="d10">Verdadero negativo</text>
 
-  <rect x="344" y="296" width="316" height="48" rx="5" fill="#eef4fa" stroke="#0055a0"/>
+  <rect x="344" y="296" width="316" height="50" rx="5" fill="#eef4fa" stroke="#0055a0"/>
   <text x="502" y="311" text-anchor="middle" class="b10">op.mon.1 Detección de intrusión — aplica ya en BÁSICA</text>
   <text x="502" y="325" text-anchor="middle" class="d10">MEDIA: + R1, detección BASADA EN REGLAS</text>
   <text x="502" y="337" text-anchor="middle" class="d10">ALTA: + R1 + R2, PROCEDIMIENTOS DE RESPUESTA a las alertas</text>
@@ -898,7 +898,7 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="28" y="66" class="d11">Ventaja: sencillo y barato</text>
   <text x="28" y="139" class="d11">Riesgo: un solo dispositivo separa internet de la red interna</text>
 
-  <text x="344" y="42" class="k11">ARQUITECTURA B · DOBLE CORTAFUEGOS (SUBRED APANTALLADA)</text>
+  <text x="344" y="42" class="k11" style="font-size:8.9px">ARQUITECTURA B · DOBLE CORTAFUEGOS (SUBRED APANTALLADA)</text>
   <rect x="344" y="50" width="316" height="94" rx="5" fill="#f7f9fc" stroke="#ccc"/>
   <rect x="354" y="86" width="52" height="26" rx="3" fill="#999"/><text x="380" y="103" text-anchor="middle" class="s11">INTERNET</text>
   <text x="410" y="103" class="a11">→</text>
@@ -918,10 +918,10 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="32" y="205" class="d11">Si la DMZ necesita un dato de dentro, la conexión debe ORIGINARSE en la red interna, o pasar por un elemento intermedio en la propia DMZ</text>
 
   <text x="20" y="234" class="k11">LOS CUATRO REFUERZOS DE mp.com.4 · MEDIA = + [R1 o R2 o R3] · ALTA = + [R2 o R3] + R4</text>
-  <rect x="20" y="242" width="156" height="56" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="98" y="258" text-anchor="middle" class="b11">R1 · LÓGICA BÁSICA</text><text x="98" y="272" text-anchor="middle" class="d11">VLAN (IEEE 802.1Q)</text><text x="98" y="284" text-anchor="middle" class="d11">Mínimo tres subredes:</text><text x="98" y="294" text-anchor="middle" class="d11">usuarios, servicios, administración</text>
-  <rect x="184" y="242" width="156" height="56" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="262" y="258" text-anchor="middle" class="b11">R2 · LÓGICA AVANZADA</text><text x="262" y="272" text-anchor="middle" class="d11">Los segmentos se</text><text x="262" y="284" text-anchor="middle" class="d11">implementan mediante</text><text x="262" y="294" text-anchor="middle" class="d11">redes privadas virtuales (VPN)</text>
-  <rect x="348" y="242" width="156" height="56" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="426" y="258" text-anchor="middle" class="b11">R3 · FÍSICA</text><text x="426" y="272" text-anchor="middle" class="d11">Medios físicos</text><text x="426" y="284" text-anchor="middle" class="d11">separados: no existe</text><text x="426" y="294" text-anchor="middle" class="d11">camino posible entre ellos</text>
-  <rect x="512" y="242" width="148" height="56" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="586" y="258" text-anchor="middle" class="b11">R4 · INTERCONEXIÓN</text><text x="586" y="272" text-anchor="middle" class="d11">Control de entrada de</text><text x="586" y="284" text-anchor="middle" class="d11">usuarios e información.</text><text x="586" y="294" text-anchor="middle" class="d11">Punto de unión monitorizado</text>
+  <rect x="20" y="242" width="156" height="58" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="98" y="256.5" text-anchor="middle" class="b11">R1 · LÓGICA BÁSICA</text><text x="98" y="269.5" text-anchor="middle" class="d11">VLAN (IEEE 802.1Q)</text><text x="98" y="281.5" text-anchor="middle" class="d11">Mínimo tres subredes:</text><text x="98" y="293.5" text-anchor="middle" class="d11">usuarios, servicios, administración</text>
+  <rect x="184" y="242" width="156" height="58" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="262" y="256.5" text-anchor="middle" class="b11">R2 · LÓGICA AVANZADA</text><text x="262" y="269.5" text-anchor="middle" class="d11">Los segmentos se</text><text x="262" y="281.5" text-anchor="middle" class="d11">implementan mediante</text><text x="262" y="293.5" text-anchor="middle" class="d11">redes privadas virtuales (VPN)</text>
+  <rect x="348" y="242" width="156" height="58" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="426" y="256.5" text-anchor="middle" class="b11">R3 · FÍSICA</text><text x="426" y="269.5" text-anchor="middle" class="d11">Medios físicos</text><text x="426" y="281.5" text-anchor="middle" class="d11">separados: no existe</text><text x="426" y="293.5" text-anchor="middle" class="d11">camino posible entre ellos</text>
+  <rect x="512" y="242" width="148" height="58" rx="5" fill="#eef4fa" stroke="#0055a0"/><text x="586" y="256.5" text-anchor="middle" class="b11">R4 · INTERCONEXIÓN</text><text x="586" y="269.5" text-anchor="middle" class="d11">Control de entrada de</text><text x="586" y="281.5" text-anchor="middle" class="d11">usuarios e información.</text><text x="586" y="293.5" text-anchor="middle" class="d11">Punto de unión monitorizado</text>
 
   <rect x="20" y="308" width="640" height="32" rx="5" fill="#fff5e6" stroke="#e89822"/>
   <text x="340" y="323" text-anchor="middle" class="b11">Y las dos obligaciones que no son refuerzo, sino requisito base</text>
@@ -1064,9 +1064,9 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="20" y="120" width="640" height="20" fill="#fff"/><text x="30" y="134" class="d15">¿Separa las tres A?</text><text x="200" y="134" class="d15">NO: van juntas</text><text x="368" y="134" class="d15">SÍ: las tres independientes</text><text x="536" y="134" class="d15">Sí</text>
   <rect x="20" y="142" width="640" height="20" fill="#f7f9fc"/><text x="30" y="156" class="d15">Uso típico</text><text x="200" y="156" class="d15">802.1X, Wi-Fi corporativa, VPN</text><text x="368" y="156" class="d15">Administración de equipos de red</text><text x="536" y="156" class="d15">Redes de operador, 4G y 5G</text>
 
-  <rect x="20" y="170" width="640" height="30" rx="4" fill="#fff5e6" stroke="#e89822"/>
-  <text x="340" y="185" text-anchor="middle" class="b15">Dos novedades verificadas contra el índice del RFC Editor que casi ningún temario recoge</text>
-  <text x="340" y="196" text-anchor="middle" class="d15">RFC 9887 (diciembre de 2025): TACACS+ sobre TLS 1.3 · RFC 9765 (abril de 2025): RADIUS/1.1 elimina MD5 usando ALPN — estado Experimental</text>
+  <rect x="20" y="170" width="640" height="33" rx="4" fill="#fff5e6" stroke="#e89822"/>
+  <text x="340" y="184" text-anchor="middle" class="b15">Dos novedades verificadas contra el índice del RFC Editor que casi ningún temario recoge</text>
+  <text x="340" y="197" text-anchor="middle" class="d15">RFC 9887 (diciembre de 2025): TACACS+ sobre TLS 1.3 · RFC 9765 (abril de 2025): RADIUS/1.1 elimina MD5 usando ALPN — estado Experimental</text>
 
   <text x="20" y="220" class="k15">802.1X · CONTROL DE ACCESO A LA RED BASADO EN PUERTO: TRES ACTORES</text>
   <rect x="20" y="228" width="640" height="76" rx="5" fill="#f7f9fc" stroke="#ccc"/>
@@ -1079,8 +1079,8 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="34" y="242" class="d15">Hasta que la autenticación tiene éxito, el puerto está NO AUTORIZADO y solo deja pasar EAPOL: ni siquiera se obtiene dirección IP</text>
 
   <text x="20" y="324" class="k15">MÉTODOS EAP Y LA FUNCIÓN MÁS ÚTIL</text>
-  <rect x="20" y="332" width="316" height="22" rx="3" fill="#eef4fa" stroke="#0055a0"/><text x="178" y="347" text-anchor="middle" class="d15">EAP-TLS (RFC 5216, y 9190 para TLS 1.3): certificado en AMBOS extremos</text>
-  <rect x="344" y="332" width="316" height="22" rx="3" fill="#eef7f1" stroke="#2d8659"/><text x="502" y="347" text-anchor="middle" class="d15">El RADIUS puede devolver el ID de VLAN: asignación DINÁMICA de VLAN</text>
+  <rect x="20" y="332" width="316" height="22" rx="3" fill="#eef4fa" stroke="#0055a0"/><text x="178" y="347" text-anchor="middle" class="d15" style="font-size:8px">EAP-TLS (RFC 5216, y 9190 para TLS 1.3): certificado en AMBOS extremos</text>
+  <rect x="344" y="332" width="316" height="22" rx="3" fill="#eef7f1" stroke="#2d8659"/><text x="502" y="347" text-anchor="middle" class="d15" style="font-size:8px">El RADIUS puede devolver el ID de VLAN: asignación DINÁMICA de VLAN</text>
 
   <text x="20" y="368" class="n15">[Fuente: RFC 2865, 2866, 6733, 8907, 9765, 9887, 3748, 5216 y 9190 — verificados contra el índice del RFC Editor · IEEE 802.1X]</text>
 </svg>
@@ -1092,7 +1092,7 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="340" y="20" text-anchor="middle" class="h16">Túnel + cifrado = VPN. Sin cifrado solo hay túnel</text>
 
   <text x="20" y="42" class="k16">CLASIFICACIÓN 1 · POR TOPOLOGÍA Y PROPÓSITO</text>
-  <rect x="20" y="50" width="316" height="86" rx="5" fill="#eef4fa" stroke="#0055a0"/>
+  <rect x="20" y="50" width="316" height="90" rx="5" fill="#eef4fa" stroke="#0055a0"/>
   <text x="178" y="66" text-anchor="middle" class="b16">SITIO A SITIO — une DOS REDES</text>
   <rect x="34" y="76" width="76" height="30" rx="3" fill="#0055a0"/><text x="72" y="95" text-anchor="middle" class="s16">Red CPD</text>
   <rect x="118" y="76" width="42" height="30" rx="3" fill="#e89822"/><text x="139" y="95" text-anchor="middle" class="s16">GW</text>
@@ -1100,16 +1100,16 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="218" y="76" width="42" height="30" rx="3" fill="#e89822"/><text x="239" y="95" text-anchor="middle" class="s16">GW</text>
   <rect x="268" y="76" width="54" height="30" rx="3" fill="#0055a0"/><text x="295" y="95" text-anchor="middle" class="s16">Distrito</text>
   <text x="34" y="122" class="d16">Permanente · autentican las PASARELAS · el usuario no instala nada</text>
-  <text x="34" y="132" class="d16">Tecnología: IPsec en MODO TÚNEL con ESP</text>
+  <text x="34" y="133" class="d16">Tecnología: IPsec en MODO TÚNEL con ESP</text>
 
-  <rect x="344" y="50" width="316" height="86" rx="5" fill="#eef7f1" stroke="#2d8659"/>
+  <rect x="344" y="50" width="316" height="90" rx="5" fill="#eef7f1" stroke="#2d8659"/>
   <text x="502" y="66" text-anchor="middle" class="b16">ACCESO REMOTO — une UN DISPOSITIVO</text>
   <rect x="358" y="76" width="76" height="30" rx="3" fill="#2d8659"/><text x="396" y="95" text-anchor="middle" class="s16">Portátil</text>
   <rect x="442" y="76" width="42" height="30" rx="3" fill="#999"/><text x="463" y="95" text-anchor="middle" class="s16">Internet</text>
   <rect x="492" y="76" width="54" height="30" rx="3" fill="#e89822"/><text x="519" y="95" text-anchor="middle" class="s16">Pasarela</text>
   <rect x="554" y="76" width="92" height="30" rx="3" fill="#2d8659"/><text x="600" y="95" text-anchor="middle" class="s16">Segmento teletrabajo</text>
   <text x="358" y="122" class="d16">Por sesión · autentica el USUARIO · requiere cliente o navegador</text>
-  <text x="358" y="132" class="d16">Tecnología: SSL/TLS VPN o IPsec con IKEv2</text>
+  <text x="358" y="133" class="d16">Tecnología: SSL/TLS VPN o IPsec con IKEv2</text>
 
   <text x="20" y="158" class="k16">CLASIFICACIÓN 2 · POR NIVEL DEL MODELO, Y QUIÉN CIFRA DE VERDAD</text>
   <rect x="20" y="166" width="640" height="20" rx="3" fill="#0055a0"/>
@@ -1162,14 +1162,14 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="354" y="236" class="d17">Hace casi todo lo de AH: se usa ESP y AH está en desuso</text>
 
   <text x="20" y="264" class="k17">IKEv2 · RFC 7296 (STD 79) · CÓMO SE ESTABLECE EL TÚNEL</text>
-  <rect x="20" y="270" width="200" height="42" rx="4" fill="#0055a0"/><text x="120" y="286" text-anchor="middle" class="t17">1 · IKE_SA_INIT</text><text x="120" y="299" text-anchor="middle" class="s17">Negocia algoritmos y ejecuta Diffie-Hellman.</text><text x="120" y="309" text-anchor="middle" class="s17">Crea la IKE SA (canal de control)</text>
+  <rect x="20" y="270" width="200" height="45" rx="4" fill="#0055a0"/><text x="120" y="286" text-anchor="middle" class="t17">1 · IKE_SA_INIT</text><text x="120" y="298" text-anchor="middle" class="s17">Negocia algoritmos y ejecuta Diffie-Hellman.</text><text x="120" y="309.5" text-anchor="middle" class="s17">Crea la IKE SA (canal de control)</text>
   <text x="226" y="292" class="a17">→</text>
-  <rect x="240" y="270" width="200" height="42" rx="4" fill="#0055a0"/><text x="340" y="286" text-anchor="middle" class="t17">2 · IKE_AUTH</text><text x="340" y="299" text-anchor="middle" class="s17">Autentica por certificado, clave precompartida</text><text x="340" y="309" text-anchor="middle" class="s17">o EAP. Crea la primera Child SA (los datos)</text>
-  <rect x="452" y="270" width="208" height="42" rx="4" fill="#eef4fa" stroke="#0055a0"/><text x="556" y="286" text-anchor="middle" class="b17">Una SA es UNIDIRECCIONAL</text><text x="556" y="299" text-anchor="middle" class="d17">Hacen falta DOS por conexión. Se identifica</text><text x="556" y="309" text-anchor="middle" class="d17">por SPI + IP de destino + protocolo</text>
+  <rect x="240" y="270" width="200" height="45" rx="4" fill="#0055a0"/><text x="340" y="286" text-anchor="middle" class="t17">2 · IKE_AUTH</text><text x="340" y="298" text-anchor="middle" class="s17">Autentica por certificado, clave precompartida</text><text x="340" y="309.5" text-anchor="middle" class="s17">o EAP. Crea la primera Child SA (los datos)</text>
+  <rect x="452" y="270" width="208" height="45" rx="4" fill="#eef4fa" stroke="#0055a0"/><text x="556" y="286" text-anchor="middle" class="b17">Una SA es UNIDIRECCIONAL</text><text x="556" y="298" text-anchor="middle" class="d17">Hacen falta DOS por conexión. Se identifica</text><text x="556" y="309.5" text-anchor="middle" class="d17">por SPI + IP de destino + protocolo</text>
 
-  <rect x="20" y="320" width="640" height="30" rx="5" fill="#fff5e6" stroke="#e89822"/>
-  <text x="340" y="335" text-anchor="middle" class="b17">IPsec y NAT: la respuesta completa a «qué puertos abro»</text>
-  <text x="340" y="346" text-anchor="middle" class="d17">UDP 500 (IKE) · UDP 4500 (ESP con NAT-T, RFC 3948) · protocolo IP 50 (ESP) y 51 (AH). Con solo el 500, el túnel se levanta pero NO pasa tráfico</text>
+  <rect x="20" y="320" width="640" height="33" rx="5" fill="#fff5e6" stroke="#e89822"/>
+  <text x="340" y="334" text-anchor="middle" class="b17">IPsec y NAT: la respuesta completa a «qué puertos abro»</text>
+  <text x="340" y="347" text-anchor="middle" class="d17">UDP 500 (IKE) · UDP 4500 (ESP con NAT-T, RFC 3948) · protocolo IP 50 (ESP) y 51 (AH). Con solo el 500, el túnel se levanta pero NO pasa tráfico</text>
 
   <text x="20" y="366" class="n17">[Fuente: RFC 4301, 4302, 4303, 7296, 3948, 8221, 8247 y 9395 — verificados contra el índice del RFC Editor · CCN-STIC-807 y 836]</text>
 </svg>
@@ -1227,15 +1227,15 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="20" y="246" width="640" height="22" rx="3" fill="#6ea2d2"/><text x="30" y="261" class="s19">2 · DATOS EN REPOSO — cifrado de disco completo anclado al TPM, bloqueo por inactividad</text><text x="470" y="261" class="s19">mp.eq.3.r1, mp.eq.2 y mp.si.2</text>
   <rect x="20" y="270" width="640" height="22" rx="3" fill="#8fb6de"/><text x="30" y="285" class="s19">1 · ARRANQUE Y HARDWARE — UEFI con arranque seguro, contraseña de firmware, control de USB</text><text x="470" y="285" class="s19">op.exp.2 (mínima funcionalidad) y art. 22</text>
 
-  <rect x="20" y="300" width="316" height="42" rx="5" fill="#fdeeee" stroke="#d13c3c"/>
-  <text x="178" y="316" text-anchor="middle" class="r19">EL ERROR QUE MÁS SE PENALIZA</text>
-  <text x="30" y="330" class="d19">El cifrado de disco protege SOLO el equipo APAGADO. Con la sesión</text>
-  <text x="30" y="340" class="d19">abierta el disco está descifrado, también para el ransomware</text>
+  <rect x="20" y="300" width="316" height="46" rx="5" fill="#fdeeee" stroke="#d13c3c"/>
+  <text x="178" y="315" text-anchor="middle" class="r19">EL ERROR QUE MÁS SE PENALIZA</text>
+  <text x="30" y="329" class="d19">El cifrado de disco protege SOLO el equipo APAGADO. Con la sesión</text>
+  <text x="30" y="341" class="d19">abierta el disco está descifrado, también para el ransomware</text>
 
-  <rect x="344" y="300" width="316" height="42" rx="5" fill="#eef7f1" stroke="#2d8659"/>
-  <text x="502" y="316" text-anchor="middle" class="b19">op.exp.6 · LA TABLA QUE HAY QUE SABER</text>
-  <text x="354" y="330" class="d19">BÁSICA: la medida · MEDIA: + R1 + R2 (escaneo periódico y al arranque)</text>
-  <text x="354" y="340" class="d19">ALTA: + R1 + R2 + R3 (LISTA BLANCA) + R4 (EDR)</text>
+  <rect x="344" y="300" width="316" height="46" rx="5" fill="#eef7f1" stroke="#2d8659"/>
+  <text x="502" y="315" text-anchor="middle" class="b19">op.exp.6 · LA TABLA QUE HAY QUE SABER</text>
+  <text x="354" y="329" class="d19" style="font-size:8.2px">BÁSICA: la medida · MEDIA: + R1 + R2 (escaneo periódico y al arranque)</text>
+  <text x="354" y="341" class="d19" style="font-size:8.2px">ALTA: + R1 + R2 + R3 (LISTA BLANCA) + R4 (EDR)</text>
 
   <text x="20" y="362" class="n19">[Fuente: ENS, RD 311/2022, op.exp.6, op.exp.2, op.exp.4, mp.eq.1 a mp.eq.4 y mp.per.3 y 4 — verificado contra el PDF del BOE]</text>
 </svg></section>
@@ -1387,7 +1387,7 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
 <h2>Tier 4 — Consultadas y NO utilizadas</h2>
 <p>Se dejan constancia de fuentes revisadas que finalmente <strong>no</strong> se han empleado como respaldo, para que la validación pueda comprobar el criterio:</p>
 <ul><li><strong>Documentación comercial de fabricantes de cortafuegos, VPN y EDR</strong>. Descartada como fuente: el temario debe ser <strong>neutral respecto al producto</strong>, y la capa de producto es volátil. Cuando hace falta una referencia de selección, la correcta es el <strong>CPSTIC</strong> (<code>op.pl.5</code>) y la <strong>CCN-STIC-140</strong>.</li><li><strong>Términos de mercado sin norma: SASE, SSE, ZTNA, NGFW</strong>. Se mencionan en el contenido porque aparecen en pliegos y en la conversación profesional, pero se advierte expresamente de que <strong>no son estándares</strong>, a diferencia de la NIST SP 800-207, de IPsec o de TLS.</li><li><strong>WireGuard</strong>. Protocolo VPN muy extendido en la práctica, pero <strong>no tiene RFC</strong>: su especificación es un artículo académico y su implementación de referencia. Por ese motivo no se ha incorporado como contenido examinable, aunque se anota aquí para la validación por si María o el IAM consideran que debe mencionarse.</li><li><strong>Documentación de la red SARA</strong>. Se cita únicamente como ejemplo de interconexión entre Administraciones; su desarrollo corresponde al <strong>Tema 39</strong> (ENI y ENS) y no a este.</li></ul></section>
-<div class="footer">Tema 36 · v1.2 · 2026-08-27 · ETRIVIUM — IAM Ayuntamiento de Madrid · Generado desde los .md (sincronizado)</div>
+<div class="footer">Tema 36 · v1.3 · 2026-08-27 · ETRIVIUM — IAM Ayuntamiento de Madrid · Generado desde los .md (sincronizado)</div>
 </div>
 <script>
 const questions = [
